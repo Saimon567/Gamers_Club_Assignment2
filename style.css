@@ -1,0 +1,669 @@
+:root {
+    --primary-TColor: rgb(255, 66, 165);
+    --secondary-TColor: rgba(11, 2, 35, 1);
+    --text-headingColor: rgb(189, 80, 211);
+    --primary-ButtonBG: rgb(255, 66, 165);
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation CSS */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 20px 0px;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    width: 100%;
+}
+
+nav li {
+    font-weight: 600;
+}
+
+main {
+    margin-top: 100px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.logo h2 {
+    color: var(--secondary-TColor);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.logo h2 span {
+    color: var(--primary-TColor);
+}
+
+.navigation {
+    list-style: none;
+    color: #3C354F;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    gap: 10px;
+}
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.navigation div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(11, 2, 35, 0.1);
+    border-radius: 8px;
+    padding: 2px 10px;
+    cursor: pointer;
+}
+
+/* Banner CSS */
+.banner {
+    display: flex;
+}
+
+.info,
+.contentInfo,
+.contentInfo2 {
+    background-image: url(images/Group\ 14.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex: 1;
+    text-align: justify;
+    padding-left: 60px;
+}
+
+.info h1 {
+    font-size: 95px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.info h2 {
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.info p {
+    color: #534C64;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.infoBtn {
+    display: flex;
+    gap: 20px;
+    margin: 10px 0px;
+}
+
+.primaryBtn {
+    background-color: var(--primary-ButtonBG);
+    border-radius: 48px;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn {
+    border-radius: 48px;
+    background: #4EC5F7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.bannerImg img {
+    width: calc(100% - 60px);
+    padding-right: 60px;
+}
+
+/* SubBanner CSS */
+.subBanner {
+    display: flex;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 13.13%, rgba(255, 66, 165, 0.03) 87.94%);
+}
+
+.subBannerImg img {
+    width: calc(100% - 60px);
+    padding-left: 60px;
+    flex: 1;
+}
+
+.subBannerInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-right: 60px;
+    flex: 1;
+    padding-left: 20px;
+}
+
+.subBannerInfo h2,
+.GameVideoInfo span,
+.contentInfo span,
+.contentInfo2 span {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.subBannerInfo p {
+    color: #534C64;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+}
+
+.subBannerInfo h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0px;
+    margin: 10px 0px;
+    font-size: 24px;
+}
+
+.subBannerInfo span {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* GameVideo CSS */
+.GameVideo,
+.GameVideoInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.GameVideoInfo h2 {
+    display: flex;
+    gap: 5px;
+    color: black;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.playVideo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0px 20px;
+    gap: 10px;
+}
+
+.eachVideo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.eachVideoImg {
+    position: relative;
+}
+
+.eachVideoImg img {
+    width: 100%;
+}
+
+.eachVideoImg i {
+    font-size: 60px;
+    font-weight: bolder;
+    position: absolute;
+    top: 45%;
+    left: 43%;
+    z-index: 100;
+    opacity: 0;
+}
+
+.eachVideoImg img:hover {
+    opacity: 0.5;
+    border: 3px solid rgb(255, 66, 165);
+    border-radius: 20px;
+}
+
+.eachVideoImg img:hover+.playBtn {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.eachVideo p {
+    font-weight: 550;
+}
+
+/* ContentBanner CSS */
+.contentBanner,
+.contentBanner2 {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0px;
+}
+
+.contentInfo h2,
+.contentInfo2 h2 {
+    color: black;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.contentBannerImg {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex: 1;
+}
+
+.mainImg {
+    width: calc(100% - 260px);
+    padding: 0px 60px 100px 200px;
+}
+
+.overFlowImg {
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+    width: 200px;
+}
+
+.contentInfo2 {
+    padding-right: 20px;
+}
+
+/* Careers CSS */
+.careers {
+    background: linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.careerInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 40px;
+    gap: 20px;
+}
+
+.careerInfo h2 {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.careerInfo p {
+    font-weight: 600;
+    text-align: justify;
+}
+
+.artistInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.artist {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.careerInfo button {
+    border-radius: 48px;
+    background: #FFF;
+    border: none;
+    padding: 10px;
+    color: var(--primary-TColor);
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.careerImg img {
+    width: 100%;
+}
+
+/* Game categories CSS */
+.categories {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    background-color: rgb(255, 249, 252);
+    padding: 20px;
+    gap: 20px;
+}
+
+.each {
+    border-radius: 50px;
+    background: #FFF;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+.each h4 {
+    font-size: small;
+}
+
+.each:hover {
+    border: 1.5px solid var(--Linear, #FF42A5);
+    cursor: pointer;
+}
+
+/* Footer CSS */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(11, 2, 35);
+    color: white;
+}
+
+footer .logo h2 {
+    color: white;
+}
+
+.footerNav {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.footerNav h5 {
+    font-size: large;
+}
+
+.social {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.policy {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.policy p {
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.copyright h4 {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: large;
+    padding: 0px 5px;
+}
+
+/* Responsive CSS */
+@media only screen and (max-width:576px) {
+
+    nav,
+    .navigation ul,
+    .navigation {
+        flex-direction: column;
+    }
+
+    main {
+        margin-top: 200px;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+    .info {
+        flex: none;
+        padding-left: 20px;
+    }
+
+    .bannerImg img {
+        width: 100%;
+        padding-right: 0px;
+    }
+
+    .subBanner {
+        flex-direction: column;
+    }
+
+    .subBannerImg img {
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .subBannerInfo {
+        flex: none;
+        padding-left: 20px;
+        align-items: flex-start;
+    }
+
+    .subBannerInfo h3 {
+        align-items: flex-start;
+    }
+
+    .GameVideoInfo h2 {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .playVideo {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contentBanner {
+        flex-direction: column;
+    }
+
+    .contentInfo {
+        padding: 5px 10px;
+    }
+
+    .mainImg {
+        width: calc(100% - 50px);
+        padding: 0px 10px 0px 40px;
+    }
+
+    .overFlowImg {
+        position: absolute;
+        bottom: -50px;
+        left: -5px;
+        width: 150px;
+        padding-left: 10px;
+    }
+
+    .contentBanner2 {
+        flex-direction: column-reverse;
+    }
+
+    .contentInfo2 {
+        margin-top: 50px;
+        padding: 5px 10px;
+    }
+
+    .contentInfo2 h2 {
+        text-align: left;
+    }
+
+    .categories {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 20px 5px;
+        gap: 10px;
+    }
+
+    .each img {
+        width: 30px;
+    }
+
+    .each {
+        padding: 5px;
+    }
+
+    .footerNav {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .social {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .policy {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .careers {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 50px;
+    }
+
+    .careerInfo {
+        padding: 5px;
+    }
+}
+
+@media only screen and (min-width:577px) and (max-width:1050px) {
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+    .subBanner {
+        flex-direction: column;
+    }
+
+    .playVideo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contentBanner {
+        flex-direction: column;
+    }
+
+    .contentInfo {
+        padding: 5px 60px;
+    }
+
+    .mainImg {
+        width: calc(100% - 200px);
+        padding: 0px 60px 0px 140px;
+    }
+
+    .overFlowImg {
+        position: absolute;
+        bottom: -50px;
+        left: 50px;
+        width: 300px;
+        padding-left: 10px;
+    }
+
+    .contentBanner2 {
+        flex-direction: column-reverse;
+    }
+
+    .contentInfo2 {
+        margin-top: 50px;
+        padding: 5px 60px;
+    }
+
+    .categories {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 10px;
+    }
+
+    .each img {
+        width: 40px;
+    }
+
+    .each {
+        padding: 5px;
+    }
+
+    .careers {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 50px;
+    }
+
+    .careerInfo {
+        padding: 40px;
+    }
+}
